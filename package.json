@@ -4,8 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:cocacola": "npm run copy:cocacola && ng serve",
+    "copy:cocacola": "copyfiles -u 2 \"customers/cocacola/src/**/*\" .",
+    "start:fanta": "npm run copy:fanta && ng serve",
+    "copy:fanta": "copyfiles -u 2 \"customers/fanta/src/**/*\" .",
     "build": "ng build",
-    "build:prod": "ng build --configuration production --base-href /angular-poc/",
+    "build:prod": "npm run copy:cocacola && ng build --configuration production --base-href /angular-poc/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -28,6 +32,7 @@
     "@angular/cli": "~16.0.3",
     "@angular/compiler-cli": "^16.0.0",
     "@types/jasmine": "~4.3.0",
+    "copyfiles": "^2.4.1",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
