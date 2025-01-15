@@ -15,7 +15,5 @@ export class HomeComponent {
 
   addToCart(product: any) {
     console.log('Añadido al carrito:', product);
-    // Aquí podrías implementar lógica para añadir al carrito
   }
-
 }
