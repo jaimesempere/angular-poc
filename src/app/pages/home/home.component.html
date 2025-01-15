@@ -1,1 +1,12 @@
-<p>home works!</p>
+<!-- app.component.html -->
+<div class="product-page">
+  <h1>Coca-Cola Shop</h1>
+  <div *ngFor="let product of products">
+    <div class="product-card">
+      <h2>{{product.name}}</h2>
+      <p>Tamaño: {{product.size}}</p>
+      <p>Precio: {{product.price | currency:'EUR'}}</p>
+      <button (click)="addToCart(product)">Añadir al Carrito</button>
+    </div>
+  </div>
+</div>
