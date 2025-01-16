@@ -18,7 +18,7 @@ export class AppConfigService {
 
   loadConfig(): Promise<void> {
     return this.http
-      .get<AppConfig>('/assets/config.json')  // Ajusta la ruta si lo has puesto en otro lugar
+      .get<AppConfig>('assets/config.json')  // Ajusta la ruta si lo has puesto en otro lugar
       .toPromise()
       .then((data: AppConfig | undefined) => {
         this.config = data as AppConfig;
