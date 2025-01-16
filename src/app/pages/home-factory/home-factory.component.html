@@ -1,6 +1,7 @@
-<!-- app.component.html -->
 <div class="product-page">
-  <h1>Home</h1>
+  <h1>Factory</h1>
+  <promo-by-customer/>
+<!--  <div *ngIf="appConfigService.isCocaCola()">PROMO visible solo coca cola</div> <------- no hacerlo así usar un componente -->
   <div *ngFor="let product of products">
     <div class="product-card">
       <h2>{{product.name}}</h2>
