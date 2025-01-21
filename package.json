@@ -31,6 +31,7 @@
     "@angular-devkit/build-angular": "^17.3.11",
     "@angular/cli": "~17.3.11",
     "@angular/compiler-cli": "^17.3.12",
+    "@testing-library/angular": "^17.3.5",
     "@types/jasmine": "~4.3.0",
     "copyfiles": "^2.4.1",
     "jasmine-core": "~4.6.0",

@@ -25,7 +25,6 @@ export class HomeComponent {
         {name: 'Promoción Coca-Cola', size: '2x24', price: 15.00, image: 'cocacola1.jpg'},
       ]
     }
-    console.log('products', this.products)
   }
 
   addToCart(product: any) {

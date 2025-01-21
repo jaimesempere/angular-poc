@@ -4,7 +4,7 @@ import {AppConfigService} from "../../../app-config.service";
 @Injectable()
 export class ProductService {
 
-  constructor( private appConfigService: AppConfigService) { }
+  constructor(private appConfigService: AppConfigService) { }
 
   getProducts() {
     if (this.appConfigService.isFanta()) {

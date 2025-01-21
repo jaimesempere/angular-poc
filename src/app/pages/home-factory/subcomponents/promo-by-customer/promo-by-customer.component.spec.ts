@@ -1,4 +1,4 @@
-// import { render, screen } from '@testing-library/angular';
+import { render, screen } from '@testing-library/angular';
 // import { PromoByCustomerComponent } from './promo-by-customer.component';
 // import { AppConfigService } from '../../../../app-config.service';
 // import { MockProvider } from 'ng-mocks';

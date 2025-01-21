@@ -20,5 +20,4 @@ export class HomeFactoryComponent {
   addToCart(product: any) {
     console.log('Añadido al carrito:', product);
   }
-
 }
